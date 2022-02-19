@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Task</string>
+    <string name="show_location_on_map">Show on map</string>
+    <string name="cancel">Cancel</string>
+</resources>

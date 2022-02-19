@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.example.myapplication.network.Wellsitems" />
+
+        <variable
+            name="data"
+            type="Wellsitems" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:background="@color/teal_200"
+        android:foregroundGravity="center"
+        app:cardCornerRadius="10dp">
+
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/textViewMargins"
+            android:layout_marginRight="@dimen/textViewMargins"
+            android:text="@{data.name}"
+            android:textStyle="bold"
+            app:showDialog = "@{data}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.cardview.widget.CardView>
+</layout>
